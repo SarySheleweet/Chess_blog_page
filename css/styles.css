@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffE4C4;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* ----- Navbar styling with logo and heading -------- */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2%;
+    
+}
+
+.navbar ul {
+    overflow: hidden;
+    padding: 15px;
+}
+.navbar li {
+    list-style-type: none;
+    background-color: #028A0f;
+    float: left;
+    
+}
+.navbar a {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #027A0f;
+}
+
+#logo_photo {
+    display: flex;
+    width: 7rem;
+    height: 5rem;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/* -------- Main body Styling ------ */
+
+.intro-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    padding: 1rem;
+}
+
+h4 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: #B2D3A8;
+    margin-bottom: 10px;
+}
+
+h3 {
+    padding-bottom: 1.5rem;
+    background-color: #5DA9E9;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+button {
+    background-color: #B2D3A8;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 10px;
+    margin: 0.5%;
+}
+
+.comment1 {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+
+    
+}
+
+
+.board {
+    justify-content: center;
+}
+
+.comment {
+    margin-bottom: 2rem;
+}
+
+#board1 {
+    align-self: center;
+}
+
+
+
+
+/* --- Footer Section Styling ---- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
