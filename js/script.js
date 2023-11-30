@@ -1,4 +1,9 @@
-import { Chess } from './chess.js'
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+toggleButton.addEventListener("click", () => {
+    navbarLinks.classList.toggle('active')
+} )
 
 // J'ai crée des tableaux de position pour chaque échiquier en notation FEN.
 // J'ai fait plusieurs tableaux pour chaque position pour montrer les coups en commentaire.
@@ -63,7 +68,7 @@ let board8 = Chessboard('board8', {
     position: positionsForFourthPuzzle2[0],
 });
 
-// Initialiser une variable pour l'gérer les index de chaque tableau de positions.
+// Initialiser une variable pour gérer les index de chaque tableau de positions.
         // J'ai fait une variable pour chaque button pour le code soit stable et éviter des probléms de valeurs de variable count.
 
 let count1 = 0;
@@ -80,35 +85,42 @@ let count8 = 0;
 
 $('#next1').on('click', function () {
 // cette ligne de JQuery remplace document.querySelector('#prev1').addEventListener('click', function() {})
-    count1++; // Le click incremente la variable count pour passer à la prochaine position.
-    if (count1 < positionsForTheFirstPuzzle.length) { // On vérifie si count est toujour moins ou égale à la longeur de tableau.
-        board1.position(positionsForTheFirstPuzzle[count1], false); // Autant que 'true' on affiche la position avec l'index count.
+     console.log(positionsForTheFirstPuzzle.length);
+    if (count1 < positionsForTheFirstPuzzle.length) {
+    
+        // Le click incremente la variable count pour passer à la prochaine position.
+         // et puis on vérifie si count est toujour moins ou égale à la longeur de tableau.
+        board1.position(positionsForTheFirstPuzzle[count1], false); 
+        count1++;// Autant que 'true' on affiche la position avec l'index count.
         // le false dans ce code appartient à la librairie Chessboard.js. Il est utilisé pour dire que le Boolean (isGameOver) n'est pas true alors le jeu continue.
     } else {
         // Fait rien si count est égale à la longeur de tableau de position pour chaque plateau.
     }
+    console.log(count1);
 });
 
 $('#prev1').on('click', function () {
-    
-    count1--;
     if (count1 >= 0) {
+        count1--;
         board1.position(positionsForTheFirstPuzzle[count1], false);
+        
     } else {
     }
+    console.log(count1);
 });
 
 $('#next2').on('click', function () {
-    count2++;
     if (count2 < alternativeVarForFirstPost.length) {
         board2.position(alternativeVarForFirstPost[count2], false);
+        count2++;
     } else {
     }
 });
 
 $('#prev2').on('click', function () {
-    count2--;
+    
     if (count2 >= 0) {
+        count2--;
         board2.position(alternativeVarForFirstPost[count2], false);
     } else {
         
@@ -116,17 +128,17 @@ $('#prev2').on('click', function () {
 });
 
 $('#next3').on('click', function () {
-    count3++;
     if (count3 < alternativeVarForFirstPost2.length) {
         board3.position(alternativeVarForFirstPost2[count3], false);
+        count3++;
     } else {
        
     }
 });
 
 $('#prev3').on('click', function () {
-    count3--;
     if (count3 >= 0) {
+        count3--;
         board3.position(alternativeVarForFirstPost2[count3], false);
     } else {
        
@@ -135,17 +147,17 @@ $('#prev3').on('click', function () {
 
 
 $('#next4').on('click', function () {
-    count4++;
     if (count4 < positionsForTheSecondPuzzle.length) {
         board4.position(positionsForTheSecondPuzzle[count4], false);
+        count4++;
     } else {
        
     }
 });
 
 $('#prev4').on('click', function () {
-    count4--;
     if (count4 >= 0) {
+        count4--;
         board4.position(positionsForTheSecondPuzzle[count4], false);
     } else {
        
@@ -153,17 +165,17 @@ $('#prev4').on('click', function () {
 });
 
 $('#next5').on('click', function () {
-    count5++;
     if (count5 < positionsForSecondPuzzle2.length) {
         board5.position(positionsForSecondPuzzle2[count5], false);
+        count5++;
     } else {
        
     }
 });
 
 $('#prev5').on('click', function () {
-    count5--;
     if (count5 >= 0) {
+        count5--;
         board5.position(positionsForSecondPuzzle2[count5], false);
     } else {
        
@@ -172,17 +184,17 @@ $('#prev5').on('click', function () {
 
 
 $('#next6').on('click', function () {
-    count6++;
     if (count6 < poistionsForThirdPuzzle.length) {
         board6.position(poistionsForThirdPuzzle[count6], false);
+        count6++;
     } else {
        
     }
 });
 
 $('#prev6').on('click', function () {
-    count6--;
     if (count6 >= 0) {
+        count6--;
         board6.position(poistionsForThirdPuzzle[count6], false);
     } else {
        
@@ -191,17 +203,17 @@ $('#prev6').on('click', function () {
 
 
 $('#next7').on('click', function () {
-    count7++;
     if (count7 < positionsForFourthPuzzle.length) {
         board7.position(positionsForFourthPuzzle[count7], false);
+        count7++;
     } else {
        
     }
 });
 
 $('#prev7').on('click', function () {
-    count7--;
     if (count7 >= 0) {
+        count7--;
         board7.position(positionsForFourthPuzzle[count7], false);
     } else {
        
@@ -210,17 +222,17 @@ $('#prev7').on('click', function () {
 
 
 $('#next8').on('click', function () {
-    count8++;
     if (count8 < positionsForFourthPuzzle2.length) {
         board8.position(positionsForFourthPuzzle2[count8], false);
+        count8++;
     } else {
        
     }
 });
 
 $('#prev8').on('click', function () {
-    count8--;
     if (count8 >= 0) {
+        count8--;
         board8.position(positionsForFourthPuzzle2[count8], false);
     } else {
        
