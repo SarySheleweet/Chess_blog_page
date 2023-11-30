@@ -16,17 +16,37 @@
     
     <!-- Navbar Section with Logo-->
     
-    <nav class="navbar">
+    <!-- <nav class="navbar">
+      
       <figure>
         <img src="./img/knight_logo_grey.png" alt="Knight Logo" id="logo_photo">
+        <p id="site-name">CHESS HISTORY</p>
       </figure>
+      
       <ul>
         <li><a href="">Home</li></a>
         <li><a href="">Blog</li></a>
         <li><a href="">FAQ</li></a>
       </ul>
+    
     </nav>
+ -->
 
+ <nav class="navbar">
+  <div class="brand-title">CHESS HISTORY <figure><img src="./img/knight_logo_grey.png" alt="Knight Logo" id="logo_photo"></figure></div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="#">Home</li></a>
+      <li><a href="#">Blog</li></a>
+      <li><a href="#">FAQ</li></a>
+    </ul>
+  </div>
+ </nav>
     <!-- Heading h1-->
     <header>
       <h1>Famous Moves in Chess History</h1>
@@ -86,11 +106,12 @@
   <h4>Move #3</h4>
   <h3>Sanz' Shocking Endgame Sacrifice</h3>
   <p>The first endgame position on this list is seen in the game between Martin Ortueta Estaban and Jose Sanz Aguado played at Madrid in 1933. Black is winning in the following position, but the path forward is unclear. Black's bishop is a tall pawn, at the moment, and Black's pawn structure is more than shattered.</p>
-  <div id="board4" style="width: 400px"></div>
+  <div id="board4" style="width: 400px" class="board"></div>
   <button id="prev4">Prev</button>
   <button id="next4">Next</button>
   <p class="comment">Rxb6! The best try. White will happily give the knight back for the dangerous passed pawn on c3. If 33...axb6 or 33...c2 is played, then White has 34.Nd3 eyeballing the queening square.</p>
-  <div id="board5" style="width: 400px"></div>
+
+  <div id="board5" style="width: 400px" class="board"></div>
   <button id="prev5">Prev</button>
   <button id="next5">Next</button>
   <p class="comment">"The final nail in the coffin. Now 35. Rxc4 cxb2 would result in a promotion on the b-file."</p>
@@ -106,7 +127,7 @@
   <h3>Edward Lasker's Stunning Queen Sacrifice For Mate</h3>
   <p>IM Edward Lasker (a five-time U.S. Open Champion and friend/distant relative of former world 
     champion Emanuel Lasker) played a famous game against George Alan Thomas in London in 1912. <span>The legendary king hunt begins after Thomas' blunder with 10...Qe7:</span></p>
-  <div id="board6" style="width: 400px"></div>
+  <div id="board6" style="width: 400px" class="board"></div>
   <button id="prev6">Prev</button>
   <button id="next6">Next</button>
   </div>  
@@ -126,7 +147,7 @@
     <p>At first glance, this looks like a boring and dead-equal bishop ending. It feels like Black can just move their e-pawn and forever control the queening square for White's h-pawn with their dark-squared bishop on d4. If you show this position to Stockfish, it initially agrees and shows an evaluation of all zeros (0.00).</p>
     <p>However, it is really White to move and win. The first move isn't terribly difficult to find, but it is the fourth move that blows my mind.</p>
 </section>
-<div id="board7" style="width: 400px"></div>
+<div id="board7" style="width: 400px" class="board"></div>
 <button id="prev7">Prev</button>
 <button id="next7">Next</button>
 <p class="comment">Bd4!! A mind-bending move! White places the bishop en prise two times in a single move! Black is forced to capture the bishop.</p>
