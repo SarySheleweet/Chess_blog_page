@@ -69,7 +69,8 @@ let board8 = Chessboard('board8', {
 });
 
 // Initialiser une variable pour gérer les index de chaque tableau de positions.
-        // J'ai fait une variable pour chaque button pour le code soit stable et éviter des probléms de valeurs de variable count.
+// J'ai essayé d'éviter cette étape en faisant une variable global et qui change dans le block de fonction mais les buttons ne fonctionnaient pas comme il faut.
+// J'ai fait une variable pour chaque button pour le code soit stable et éviter des probléms de valeurs de variable count.
 
 let count1 = 0;
 let count2 = 0;

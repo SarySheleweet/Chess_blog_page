@@ -4,35 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" viewport-width="width=device-width, initial-scale=1.0">
     <title>Chessboard</title>
+    <!-- Chessboard.js link-->
     <link rel="stylesheet" href="css/chessboard-1.0.0.min.css">
+    <!-- ===== Boxicons CDN Link ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CCS Link-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Google Fonts Link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/chessboard-1.0.0.min.js"></script>
+
+    <!-- Main JS script avec type module et defer attributs.
+    JavaScript modules allow you to break up your code into separate files.
+    This makes it easier to maintain a code-base.-->
     <script type="module" src="./js/script.js" defer></script>
   </head>
 
   <body>
     
-    <!-- Navbar Section with Logo-->
-    
-    <!-- <nav class="navbar">
-      
-      <figure>
-        <img src="./img/knight_logo_grey.png" alt="Knight Logo" id="logo_photo">
-        <p id="site-name">CHESS HISTORY</p>
-      </figure>
-      
-      <ul>
-        <li><a href="">Home</li></a>
-        <li><a href="">Blog</li></a>
-        <li><a href="">FAQ</li></a>
-      </ul>
-    
-    </nav>
- -->
+   <!-- Navbar and Links-->
 
  <nav class="navbar">
   <div class="brand-title">CHESS HISTORY <figure><img src="./img/knight_logo_grey.png" alt="Knight Logo" id="logo_photo"></figure></div>
@@ -75,29 +66,29 @@
             <p class="comment">With the knight on c3 attacked and Black one move away from consolidation with 18...Bb7. Kholmov needed to find something quickly.
             Luckily for the chess world, he found an amazing combination!</p>
           </div>
-  <div id="board1" style="width: 400px" class="board"> </div>
+  <div id="board1" class="board"> </div>
   
   </section>
         <button id="prev1">Prev</button>
         <button id="next1">Next</button>
-<p class="comment">After this, White is winning and continued in a convincing fashion</p>
+<p class="comment">After this, White is winning and continued in a convincing fashion!</p>
 <hr>
 
 <p class="comment">Alternatively, both Nxe5 and Bxe5 are possible replies but <strong>White retains a large advantage <span>ANYWAY!</span></strong></p>
 
-<div id="board2" style="width: 400px" class="board"></div>
+<div id="board2" class="board"></div>
 
 <button id="prev2">Prev</button>
 <button id="next2">Next</button>
-<caption>Sequence if Nxe5 is played</caption>
+<caption>Sequence if Nxe5 is played.</caption>
 <hr>
 
 <p class="comment">If Bxe5 is played White has a different reply:</p>
-<div id="board3" style="width: 400px" class="board"></div>
+<div id="board3" class="board"></div>
 
 <button id="prev3">Prev</button>
 <button id="next3">Next</button>
-<caption>Sequence if Bxe5 is played</caption>
+<caption>Sequence if Bxe5 is played.</caption>
 </div>
 </section>
 
@@ -109,16 +100,16 @@
   <div>
   <h4>Move #3</h4>
   <h3>Sanz' Shocking Endgame Sacrifice</h3>
-  <p>The first endgame position on this list is seen in the game between Martin Ortueta Estaban and Jose Sanz Aguado played at Madrid in 1933. Black is winning in the following position, but the path forward is unclear. Black's bishop is a tall pawn, at the moment, and Black's pawn structure is more than shattered.</p>
-  <div id="board4" style="width: 400px" class="board"></div>
+  <p class="comment">The first endgame position on this list is seen in the game between Martin Ortueta Estaban and Jose Sanz Aguado played at Madrid in 1933. Black is winning in the following position, but the path forward is unclear. Black's bishop is a tall pawn, at the moment, and Black's pawn structure is more than shattered.</p>
+  <div id="board4" class="board"></div>
   <button id="prev4">Prev</button>
   <button id="next4">Next</button>
   <p class="comment">Rxb6! The best try. White will happily give the knight back for the dangerous passed pawn on c3. If 33...axb6 or 33...c2 is played, then White has 34.Nd3 eyeballing the queening square.</p>
 
-  <div id="board5" style="width: 400px" class="board"></div>
+  <div id="board5" class="board"></div>
   <button id="prev5">Prev</button>
   <button id="next5">Next</button>
-  <p class="comment">"The final nail in the coffin. Now 35. Rxc4 cxb2 would result in a promotion on the b-file."</p>
+  <p class="comment">The final nail in the coffin. Now 35. Rxc4 cxb2 would result in a promotion on the b-file.</p>
   </div>
 </section>
 
@@ -129,9 +120,9 @@
   <div>
   <h4>Move #2</h4>
   <h3>Edward Lasker's Stunning Queen Sacrifice For Mate</h3>
-  <p>IM Edward Lasker (a five-time U.S. Open Champion and friend/distant relative of former world 
+  <p class="comment">IM Edward Lasker (a five-time U.S. Open Champion and friend/distant relative of former world 
     champion Emanuel Lasker) played a famous game against George Alan Thomas in London in 1912. <span>The legendary king hunt begins after Thomas' blunder with 10...Qe7:</span></p>
-  <div id="board6" style="width: 400px" class="board"></div>
+  <div id="board6" class="board"></div>
   <button id="prev6">Prev</button>
   <button id="next6">Next</button>
   </div>  
@@ -145,29 +136,50 @@
     Move #1
   </h4>
   <h3>An Amazing Bishop Endgame</h3>
-    <p>According to the Harold van der Heijden Endgame Study Database IV, this study was composed by P. Heuacker in 1930 and published in Neue Freie Presse #44. 
+    <p class="comment">According to the Harold van der Heijden Endgame Study Database IV, this study was composed by P. Heuacker in 1930 and published in Neue Freie Presse #44. 
     So, how did this 90-year-old study make the list for the 10 best moves of all time? Let's take a look.
     </p>
-    <p>At first glance, this looks like a boring and dead-equal bishop ending. It feels like Black can just move their e-pawn and forever control the queening square for White's h-pawn with their dark-squared bishop on d4. If you show this position to Stockfish, it initially agrees and shows an evaluation of all zeros (0.00).</p>
-    <p>However, it is really White to move and win. The first move isn't terribly difficult to find, but it is the fourth move that blows my mind.</p>
+    <p class="comment">At first glance, this looks like a boring and dead-equal bishop ending. It feels like Black can just move their e-pawn and forever control the queening square for White's h-pawn with their dark-squared bishop on d4. If you show this position to Stockfish, it initially agrees and shows an evaluation of all zeros (0.00).</p>
+    <p class="comment">However, it is really White to move and win. The first move isn't terribly difficult to find, but it is the fourth move that blows my mind.</p>
 </section>
-<div id="board7" style="width: 400px" class="board"></div>
+<div id="board7" class="board"></div>
 <button id="prev7">Prev</button>
 <button id="next7">Next</button>
 <p class="comment">Bd4!! A mind-bending move! White places the bishop en prise two times in a single move! Black is forced to capture the bishop.</p>
 
 
-<div id="board8" style="width: 400px"></div>
+<div id="board8" class="board"></div>
 <button id="prev8">Prev</button>
 <button id="next8">Next</button>
 <p class="comment">A truly beautiful endgame idea that displays that there is life in even the dullest-looking positions. The simultaneous simplicity and complexity make this my favorite study.
   I consider it icing on the cake that it still confuses powerful engines.</p>
+
+  <hr>
+  <hr>
 </main>
 
 <footer>
-  All rights reserved 
+  <div class="footer_container">
+  <p>All rights reserved <figure><img src="./img/copyright_icon_back.png" alt="copyright icon" class="copy_right_icon"></figure></p>
+  <div class="social_media">
+    <ul>
+      <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+      <li><a href="#"><ion-icon name="logo-discord"></ion-icon></a></li>
+  </ul>
+  </div>
+</div>
 </footer>
 </body>
+
+<!-- JQuery script & chessboard.js script-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/chessboard-1.0.0.min.js"></script>
+
+<!-- Ionicons Link -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </html>
 
 
