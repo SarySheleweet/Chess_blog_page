@@ -5,10 +5,11 @@
 }
 
 body {
-    background-color: #ffE4C4;
+    background-color: black;
     padding-left: 2%;
     padding-right: 2%;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 /* ----- Responsive Navbar styling with logo and heading -------- */
@@ -91,7 +92,7 @@ body {
     width: 7rem;
     height: 5rem;
     background-color: transparent;
-    margin: 0;
+    margin-top: 25px;
     padding: 0;
     left: 0;
 }
@@ -104,7 +105,7 @@ body {
     font-weight: bold;
     font-family: cursive;
     font-size: 0.8rem;
-    color: black;
+    color: white;
     margin-top: 1rem;
 }
 h1 {
@@ -118,11 +119,7 @@ h1 {
     margin-bottom: 20px;
 }
 #title-photo{
-    display: flex;
-    width: 75%;
-    align-self: center;
-    justify-content: center;
-    align-items: center;
+    width: 75%; 
 }
 
 /* -------- Main body Styling ------ */
@@ -138,7 +135,7 @@ hr {
 h4 {
     padding-top: 1rem;
     padding-bottom: 2rem;
-    background-color: #f1bc86;
+    background-color: #8c5f32;
     margin-bottom: 15px;
     padding-left: 1rem;
     border: 1px solid black;
@@ -148,7 +145,7 @@ h4 {
 }
 h3 {
     padding-bottom: 1.5rem;
-    background-color:#e8a058 ;
+    background-color:#8c5f32 ;
     padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
@@ -200,9 +197,10 @@ button {
 .social-media ul li a ion-icon {
     width: 30px;
     height: 22px;
+    color: white;
 }
 .social-media ul li a ion-icon:hover {
-    background-color:beige;
+    background-color:#8c5f32;
 }
 .copy-right-icon {
     width: 20px;
