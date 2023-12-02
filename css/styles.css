@@ -31,7 +31,7 @@ body {
 }
 .navbar-links li {
     list-style-type: none;
-    background-color: #028A0f;
+    background-color: #8c5f32;
     font-size: 1.2rem;
 }
 .navbar-links li a {
@@ -43,7 +43,7 @@ body {
 }
 
 .navbar-links a:hover{
-    background-color: #027A0f;
+    background-color: #954535;
 }
 .toggle-button {
     position: absolute;
@@ -130,25 +130,29 @@ hr {
 h4 {
     padding-top: 1rem;
     padding-bottom: 2rem;
-    background-color: #B2D3A8;
+    background-color: #f1bc86;
     margin-bottom: 15px;
     padding-left: 1rem;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 4px rgb(56 66 77) ;
+    width: 20%;
 }
 
 h3 {
     padding-bottom: 1.5rem;
-    background-color: #a3c798 ;
+    background-color:#e8a058 ;
     padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 4px rgb(56 66 77);
+    width: 35%;
 }
-
+#Lasker{
+    width: 45%;
+}
 button {
     background-color: #B2D3A8;
     width: 4rem;
@@ -156,14 +160,11 @@ button {
     border-radius: 10px;
     margin: 0.5%;
 }
-
 .comment1 {
     margin: 1rem;
     display: flex;
     flex-direction: row-reverse;
 }
-
-
 .board {
     width: 400px;
 }
@@ -176,27 +177,27 @@ button {
 
 
 /* --- Footer Section Styling ---- */
-.footer_container {
+.footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
-.social_media ul {
+.social-media ul {
     display: flex;
     margin-left: 40px;
 }
-.social_media ul li {
+.social-media ul li {
     display: inline-flex;
     text-decoration: none;
 }
-.social_media ul li a ion-icon {
+.social-media ul li a ion-icon {
     width: 30px;
     height: 22px;
 }
-.social_media ul li a ion-icon:hover {
+.social-media ul li a ion-icon:hover {
     background-color:beige;
 }
-.copy_right_icon {
+.copy-right-icon {
     width: 20px;
 }
