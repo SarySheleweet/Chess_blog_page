@@ -9,7 +9,6 @@ body {
     padding-left: 2%;
     padding-right: 2%;
     font-family: 'Poppins', sans-serif;
-
 }
 
 /* ----- Responsive Navbar styling with logo and heading -------- */
@@ -41,7 +40,6 @@ body {
     text-align: center;
     text-decoration: none;
 }
-
 .navbar-links a:hover{
     background-color: #954535;
 }
@@ -55,7 +53,6 @@ body {
     width: 30px;
     height: 20px;
 }
-
 .toggle-button .bar {
     height: 3px;
     width: 100%;
@@ -110,10 +107,22 @@ body {
     color: black;
     margin-top: 1rem;
 }
-
 h1 {
     text-align: center;
     padding-bottom: 30px;
+}
+.photo-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+#title-photo{
+    display: flex;
+    width: 75%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -------- Main body Styling ------ */
@@ -122,11 +131,10 @@ hr {
     margin-bottom: 5px;
 }
 .intro-text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: italic;
     padding: 1rem;
 }
-
 h4 {
     padding-top: 1rem;
     padding-bottom: 2rem;
@@ -138,7 +146,6 @@ h4 {
     box-shadow: 5px 5px 4px rgb(56 66 77) ;
     width: 20%;
 }
-
 h3 {
     padding-bottom: 1.5rem;
     background-color:#e8a058 ;
@@ -168,7 +175,6 @@ button {
 .board {
     width: 400px;
 }
-
 .comment {
     margin-bottom: 2rem;
     margin-top: 1rem;
