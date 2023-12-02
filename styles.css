@@ -177,27 +177,27 @@ button {
 
 
 /* --- Footer Section Styling ---- */
-.footer_container {
+.footer-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
 }
-.social_media ul {
+.social-media ul {
     display: flex;
     margin-left: 40px;
 }
-.social_media ul li {
+.social-media ul li {
     display: inline-flex;
     text-decoration: none;
 }
-.social_media ul li a ion-icon {
+.social-media ul li a ion-icon {
     width: 30px;
     height: 22px;
 }
-.social_media ul li a ion-icon:hover {
+.social-media ul li a ion-icon:hover {
     background-color:beige;
 }
-.copy_right_icon {
+.copy-right-icon {
     width: 20px;
 }
